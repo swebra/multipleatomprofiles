@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Set the path of ATOM_HOME to be a folder in the current working directory with
+# the name equal to "atom[the name of this script after "apm"]-home".
+# E.g. "apm-foo" will use a folder named "atom-foo-home".
+thisScriptPath="$(readlink -f -- "$0")" # Full path to script
+thisScriptFileName="${thisScriptPath##*/}" # Name of script with extension
+thisScriptName="${thisScriptFileName%.*}" # Name of script without extension
+export ATOM_HOME="${thisScriptPath%/*}"/atom"${thisScriptName:3}"-home
+
+# Launch APM with arguments (assumes the Atom launch files are in your PATH)
+apm $@
