@@ -1,7 +1,7 @@
 # Multiple Atom Profiles
 A collection of batch / bash scripts for running multiple [Atom](https://atom.io/) profiles using the [`ATOM_HOME`](https://flight-manual.atom.io/using-atom/sections/basic-customization/#custom-home-location-with-an-environment-variable) environment variable.
 
-See [imswebra.com](https://www.imswebra.com/posts/multipleatomprofiles/) for more information on the development and my personal usage of these scripts.
+See [swebra.com](https://swebra.com/posts/multiple-atom-profiles/) for more information on the development and my personal usage of these scripts.
 
 ## Basic Usage
 Create a directory to hold your custom Atom profiles, and copy the scripts for your respective operating system into it. Add this directory to your `PATH` and rename the two scripts according to the profile's use, following the `atom-[subject]` and `apm-[subject]` nomenclature. Launch the custom profile using the `atom-[subject]` script, which will create a `atom-[subject]-home` folder.
